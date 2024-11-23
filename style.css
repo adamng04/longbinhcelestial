@@ -73,7 +73,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 260px;
+    height: 262px;
     width: 100%;
     box-shadow: 1px 1px 1px rgb(0, 0, 0);
     box-sizing: content-box;
@@ -95,6 +95,22 @@ div {
     text-decoration: none;
     color: white;
     background-color: black;
+}
+
+@media (max-width: 568px) {
+    .gallery_image img{
+        height: auto;
+    }
+
+    .gallery {
+        scale: 90%;
+    }
+}
+
+@media (max-width: 1399px) {
+    .gallery_image img{
+        height: auto;
+    }
 }
 
 
