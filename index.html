@@ -3,99 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Binh's Digital Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Long Binh's Digital Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo-text" style="font-weight: 700; font-size: 1.3rem;">ADAM</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#contacts">CONTACTS</a></li>
+    </ul>
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-<div class="box p-3">
-  <div class="navigation">
-    <div class="logo">
-      <img src="./images/profile.png" alt="Logo" width="140px" height="178px">
+  <!-- Header -->
+  <header class="header">
+    <p class="header-intro">Hi, it's</p>
+    <h1>LONG BÌNH</h1>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h3 class="section-title">About</h3>
+    <div style="background: black; color: white; padding: 3rem; border-radius: 20px; outline: 2px dashed white; outline-offset: -10px; max-width: 800px; margin: 0 auto;">
+      <p style="text-align: center; font-size: 1.2rem; line-height: 1.8; margin: 0;">
+        Nguyen Long Binh is a Graphic Designer student currently stationed in FPT University, specializing in brand identity, UI/UX design, and mild motion graphics. Learning how to create visual experience that blends creativity with functionality for people.
+      </p>
     </div>
-    <br>
-    <div class="title">
-      <h1>NGUYEN LONG BINH</h1>
-      <h5>GRAPHIC DESIGNER</h5>
+
+    <div class="skills-section">
+      <h3 class="section-title" style="margin-top: 3rem;">Skills</h3>
+      <div id="skillsContainer"></div>
     </div>
-    <br>
-    <div class="sec-b container">
-      <div class="icons p-3 row col-xl-5 col-md-9 mx-auto align-content-center">
-        <div class="d-flex column gap-3 m-0 my-2 align-content-center">
-          <i class="fa-solid fa-phone"></i>0896 461 046
-        </div>
-        <div class="d-flex column gap-3 m-0 my-1 align-items-center">
-          <i class="fa-solid fa-envelope"></i>binhnlse180102@fpt.edu.vn
-        </div>
-        <div class="d-flex column gap-3 m-0 my-2 align-items-center">
-          <i class="fa-brands fa-behance"></i><a href="https://www.behance.net/adamii2">https://www.behance.net/adamii2</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="a" class="container">
-  <div class="gallery my-5">
-    <div class="gallery_one gap-5 my-5 row align-content-center justify-content-center">
-      <h3 style="text-align: center">Portfolio Projects</h3>
-      <a class="shapeone col-xl-5 col-lg-5 col-md-10" href="https://www.behance.net/gallery/212793315/Brand-Guidelines-Ahoy-Virtual-Assistant">
-        <div class="gallery_image my-3">
-          <img src="./images/ahoy-02.png" alt="Ahoy">
-        </div>
-        <div class="gallery_text">
+  </section>
+
+  <!-- Works Section -->
+  <section id="works" class="container">
+    <h3 class="section-title">Portfolio Projects</h3>
+    <div class="works-grid">
+
+      <a class="work-item" href="https://www.behance.net/gallery/212793315/Brand-Guidelines-Ahoy-Virtual-Assistant">
+        <img class="work-image" src="./images/ahoy-02.png" alt="Ahoy">
+        <div class="work-text">
           <h2>Brand Identity Project</h2>
           <p>Digital Assistant Ahoy Brand Identity</p>
         </div>
       </a>
 
-      <a class="shapeone col-xl-5 col-lg-5 col-md-10" href="https://www.figma.com/design/YQLFkQKTG0Vcg08jp8PTab/PHETS-FINAL?node-id=0-1&node-type=canvas&t=qYgK00X2hpqLybYk-0">
-        <div class="gallery_image my-3">
-          <img alt="Phet" src="./images/PHET-03.png">
+      <a class="work-item" href="https://www.behance.net/gallery/212793315/Brand-Guidelines-Ahoy-Virtual-Assistant">
+        <img class="work-image" src="./images/ahoy-02.png" alt="Ahoy">
+        <div class="work-text">
+          <h2>Typography Exercises</h2>
+          <p>Various typography experiments created for university assignments.</p>
         </div>
-        <div class="gallery_text">
+      </a>
+
+      <a class="work-item" href="https://www.figma.com/design/YQLFkQKTG0Vcg08jp8PTab/PHETS-FINAL?node-id=0-1&node-type=canvas&t=qYgK00X2hpqLybYk-0">
+        <img class="work-image" src="./images/PHET-03.png" alt="Phet">
+        <div class="work-text">
           <h2>UI/UX Design</h2>
           <p>A static, responsive website UI/UX project using Figma.</p>
         </div>
       </a>
 
-      <a class="shapeone col-xl-5 col-lg-5 col-md-10" href="https://www.behance.net/gallery/212785063/Motion-Graphic-MV-Assignment">
-        <div class="gallery_image my-3">
-          <img alt="Motion Graphics" src="./images/motion.gif" >
-        </div>
-        <div class="gallery_text">
+      <a class="work-item" href="https://www.behance.net/gallery/212785063/Motion-Graphic-MV-Assignment">
+        <img class="work-image" src="./images/motion.gif" alt="Motion Graphics">
+        <div class="work-text">
           <h2>Motion Graphics</h2>
           <p>A motion graphic music video utilizing After Effects, with Son Dang.</p>
         </div>
       </a>
 
-      <a class="shapeone col-xl-5 col-lg-5 col-md-10" href="https://www.behance.net/gallery/213177415/Artbook-Project-Futurism-Dada">
-        <div class="gallery_image my-3">
-          <img alt="Artbook" src="./images/artbook-01.png">
-        </div>
-        <div class="gallery_text">
+      <a class="work-item" href="https://www.behance.net/gallery/213177415/Artbook-Project-Futurism-Dada">
+        <img class="work-image" src="./images/artbook-01.png" alt="Artbook">
+        <div class="work-text">
           <h2>History of Art Artbook Project - Futurism & Dada</h2>
           <p>A collaboration artbook project with Vu Minh Tam</p>
         </div>
       </a>
 
-      <a class="shapeone col-xl-5 col-lg-5 col-md-10" href="https://www.behance.net/gallery/212835645/Cng-Coffee-Event-Project">
-        <div class="gallery_image my-3">
-          <img alt="Cafe Cong Project" src="./images/1.jpg">
-        </div>
-        <div class="gallery_text">
+      <a class="work-item" href="https://www.behance.net/gallery/212835645/Cng-Coffee-Event-Project">
+        <img class="work-image" src="./images/1.jpg" alt="Cafe Cong Project">
+        <div class="work-text">
           <h2>Cộng Coffee Event Project</h2>
           <p>Event planning + Key Visuals for Cộng Cafe</p>
         </div>
       </a>
     </div>
-  </div>
-</div>
+  </section>
 
-<div class="footer my-1" style="text-align: center;">
-  <p>copyright <i class="fa-regular fa-copyright"></i> 2024 longbinhcelestial</p>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Contacts Section -->
+  <section id="contacts" class="contact-section">
+    <h3 class="section-title">Get In Touch</h3>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>binhnlse180102 (at) fpt.edu.vn</span>
+      </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-behance"></i>
+        <a href="https://www.behance.net/adamii2">behance.net/adamii2</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>copyright <i class="fa-regular fa-copyright"></i> 2025 longbinhcelestial</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    const skills = [
+      { name: 'Adobe Illustrator', level: 8 },
+      { name: 'Adobe Photoshop', level: 8 },
+      { name: 'After Effects', level: 6 },
+      { name: 'Video Editing', level: 7 }
+    ];
+
+    const skillsContainer = document.getElementById('skillsContainer');
+    
+    skills.forEach(skill => {
+      const skillItem = document.createElement('div');
+      skillItem.className = 'skill-item';
+      
+      const skillName = document.createElement('span');
+      skillName.className = 'skill-name';
+      skillName.textContent = skill.name;
+      
+      const skillDots = document.createElement('div');
+      skillDots.className = 'skill-dots';
+      
+      for (let i = 0; i < 10; i++) {
+        const dot = document.createElement('span');
+        dot.className = `dot ${i < skill.level ? 'filled' : 'empty'}`;
+        skillDots.appendChild(dot);
+      }
+      
+      skillItem.appendChild(skillName);
+      skillItem.appendChild(skillDots);
+      skillsContainer.appendChild(skillItem);
+    });
+  </script>
 </body>
 </html>
