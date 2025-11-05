@@ -12,8 +12,24 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    background: white;
     color: black;
+    background: url(/images/background.jpg) center/contain;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.79);
+    z-index: 0;
+}
+
+body * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Header Section */
@@ -23,7 +39,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
     position: relative;
 }
 
@@ -38,7 +53,7 @@ body {
     font-weight: 900;
     letter-spacing: -0.02em;
     line-height: 0.9;
-    background: linear-gradient(to bottom, #000000 0%, #000000 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, #000000 20%, #000000 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -226,6 +241,7 @@ body {
     padding: 2rem;
     border: 2px dashed black;
     border-radius: 15px;
+    background: white;
 }
 
 .contact-item {
@@ -247,13 +263,6 @@ body {
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 5px;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 2rem;
-    border-top: 2px solid black;
 }
 
 /* Tablet Styles */
